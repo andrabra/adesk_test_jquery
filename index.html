@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Table with Sum and Add Row</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <table id="editable-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Итог</th>
+            <th>Январь 2024</th>
+            <th>Февраль 2024</th>
+            <th>Март 2024</th>
+            <th>Апрель 2024</th>
+            <th>Май 2024</th>
+            <th>Июнь 2024</th>
+            <th>Июль 2024</th>
+            <th>Август 2024</th>
+            <th>Сентябрь 2024</th>
+            <th>Октябрь 2024</th>
+            <th>Ноябрь 2024</th>
+            <th>Декабрь 2024</th>
+          </tr>
+          <tr>
+            <th>БЮДЖЕТ <button>~</button></th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+            <th>План</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group-row indent-1" data-group="income">
+            <td>
+              Бюджет доходов
+              <button class="add-row">+</button>
+              <button class="add-group">#</button>
+            </td>
+            <td class="row-total">0</td>
+            <td class="column-total" id="column-total-2">0</td>
+            <td class="column-total" id="column-total-3">0</td>
+            <td class="column-total" id="column-total-4">0</td>
+            <td class="column-total" id="column-total-5">0</td>
+            <td class="column-total" id="column-total-6">0</td>
+            <td class="column-total" id="column-total-7">0</td>
+            <td class="column-total" id="column-total-8">0</td>
+            <td class="column-total" id="column-total-9">0</td>
+            <td class="column-total" id="column-total-10">0</td>
+            <td class="column-total" id="column-total-11">0</td>
+            <td class="column-total" id="column-total-12">0</td>
+            <td class="column-total" id="column-total-13">0</td>
+          </tr>
+          <tr class="group-row indent-1" data-group="expenses">
+            <td>
+              Бюджет расходов
+              <button class="add-row">+</button>
+              <button class="add-group">#</button>
+            </td>
+            <td class="row-total">0</td>
+            <td class="column-total" id="column-total-20">0</td>
+            <td class="column-total" id="column-total-30">0</td>
+            <td class="column-total" id="column-total-40">0</td>
+            <td class="column-total" id="column-total-50">0</td>
+            <td class="column-total" id="column-total-60">0</td>
+            <td class="column-total" id="column-total-70">0</td>
+            <td class="column-total" id="column-total-80">0</td>
+            <td class="column-total" id="column-total-90">0</td>
+            <td class="column-total" id="column-total-100">0</td>
+            <td class="column-total" id="column-total-110">0</td>
+            <td class="column-total" id="column-total-120">0</td>
+            <td class="column-total" id="column-total-130">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
